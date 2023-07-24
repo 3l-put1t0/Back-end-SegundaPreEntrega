@@ -1,0 +1,19 @@
+<h1>Carts</h1>
+<section id="container">
+    {{#each products}}
+        <section class="product">
+            <hr>
+            <hr>
+            <h2>Producto: {{this.product.title}}</h2>
+            <hr>
+            <h3><strong>Descripción: </strong><br> {{this.product.description}}</h3>
+            <h3><strong>Elementos seleccionados: </strong>{{quantity}}</h3>
+            <h3>Precio por unidad: {{this.product.price}}</h3>
+            <h3><strong>Precio total:</strong> {{this.product.total}}</h3>
+            <h4>Categoria: {{this.product.category}}</h4>
+        </section>
+    {{/each}}
+</section>
+{{!-- <script src="/socket.io/socket.io.js"></script> --}}
+{{!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.12/dist/sweetalert2.all.min.js"></script> --}}
+{{!-- <script src="/js/products.js"></script> --}}
